@@ -1,0 +1,24 @@
+{
+  "name": "lab5",
+  "version": "1.0.0",
+  "description": "Anthony Georgis",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Malakelis/Lab5.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/Malakelis/Lab5/issues"
+  },
+  "homepage": "https://github.com/Malakelis/Lab5#readme",
+  "devDependencies": {
+    "jest": "^29.7.0"
+  }
+}
