@@ -2,7 +2,7 @@
 window.addEventListener('DOMContentLoaded', init);
 
 function init() {
-  // grab all the elements needed
+  // Grab all the elements needed
   const hornSelect   = document.getElementById('horn-select');
   const hornImage    = document.querySelector('#expose img');
   const audio      = document.querySelector('#expose audio');
@@ -10,7 +10,7 @@ function init() {
   const volumeIcon   = document.querySelector('#volume-controls img');
   const playButton   = document.querySelector('#expose button');
 
-  // set up confetti
+  // Set up confetti
   const jsConfetti = new JSConfetti();
 
   // When you pick a horn, swap image + audio src
@@ -24,10 +24,10 @@ function init() {
   // When you move the volume slider:
   volumeSlider.addEventListener('input', () => {
     const vol = Number(volumeSlider.value);  // 0–100
-    // set the actual HTMLMediaElement volume (0.0–1.0)
+    // Set the actual HTMLMediaElement volume (0.0–1.0)
     audio.volume = vol / 100;
 
-    // pick icon level 0–3
+    // Pick icon level 0–3
     let level;
     if (vol === 0)        level = 0;
     else if (vol < 33)    level = 1;
@@ -40,7 +40,7 @@ function init() {
 
   // Event listener for clicking play sound
   playButton.addEventListener('click', () => {
-    // play the chosen sound
+    // Play the chosen sound
     audio.play();
 
     // Fire confetti for party horn
